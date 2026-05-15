@@ -163,7 +163,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-
+        
+// Note: Password hashing not yet implemented — planned improvement (e.g., SHA-256)
+        
         values.put(COL_USERNAME, username);
         values.put(COL_PASSWORD, password);
 
